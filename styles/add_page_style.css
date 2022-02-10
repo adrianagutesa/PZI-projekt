@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #e53b00,
+    #e25300,
+    #de6600,
+    #da7603,
+    #d68415
+  );
+  font-family: "Sansita Swashed", cursive;
+}
+
+.form-box {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form-box h1 {
+  font-size: 2em;
+  border-left: 5px solid #e53b00;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.form-box .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.form-box .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.form-box .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+
+.form-box .inputbox input:focus ~ span,
+.form-box .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+
+.form-box .inputbox input:invalid {
+  border: 2px solid #ff6300;
+}
+
+.form-box .inputbox .writer {
+  position: relative;
+  width: 324px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 2px solid;
+}
+
+.form-box .inputbox .writer:invalid {
+  border: 2px solid #ff6300;
+}
+
+.message {
+  display: grid;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 0;
+}
+
+#buttons [type="submit"] {
+  width: 50%;
+  background: #ff6300;
+  color: #fff;
+  border: #fff;
+  transition: all 0.35s;
+  font-size: 1.2em;
+  border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+}
+
+#buttons [type="submit"]:hover {
+  background-image: linear-gradient(
+    to right,
+    #f96100,
+    #e95b00,
+    #da5500,
+    #ca4f01,
+    #bb4901
+  );
+}
+
+.back_btn {
+  font-size: 1.2rem;
+  background: #a32600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  margin-top: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.back_btn a,
+.home_btn a {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.back_btn a {
+  color: #fff;
+}
+
+.home_btn a {
+  color: #000;
+}
+
+.home_btn {
+  font-size: 1rem;
+  background: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  cursor: pointer;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.home_btn:hover {
+  background: #bb4901;
+}
